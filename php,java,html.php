@@ -17,14 +17,14 @@
     <tr>
         <td>
 
-            <!-- Form yo kwinjizamo izina -->
+            
             <form method="GET">
                 <input type="text" name="name" placeholder="Write your name!" required>
                 <input type="submit" value="Check your information">
             </form>
 
             <?php
-            // LIST Y’ABANTU BOSE
+            
             $people = [
                 ["short"=>"auberte","full name"=>"CYUBAHIRO HIRWA Auberte","age"=>19],
                 ["short"=>"elyse","full name"=>"CYIZUZO Elyse","age"=>18],
@@ -55,7 +55,7 @@
                 ["short"=>"joice","full name"=>"JOICE","age"=>19]
             ];
 
-            // PHP SEARCH PART – ishakisha iryo ariryo ryose
+            
             if (isset($_GET['name'])) {
                 $input = strtolower(trim($_GET['name']));
                 $found = false;
@@ -79,7 +79,7 @@
             ?>
 
             <br><br>
-            <!-- Dynamic Date & Time & Day -->
+            
             <div class="clock" id="datetime"></div>
 
             <script>
