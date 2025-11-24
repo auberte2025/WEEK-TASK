@@ -40,7 +40,7 @@ if ($conn->connect_error) {
             </form>
 
             <?php
-            // 2. PHP SEARCH PART – ishakisha izina muri DB
+           
             if (isset($_GET['name'])) {
                 $name_input = $conn->real_escape_string($_GET['name']);
                 $sql = "SELECT * FROM students WHERE name LIKE '%$name_input%'";
