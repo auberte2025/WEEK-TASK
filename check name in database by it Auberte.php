@@ -1,5 +1,5 @@
 <?php
-// 1. Database connection
+
 $host = "localhost";
 $user = "root";
 $pass = "";
@@ -33,7 +33,7 @@ if ($conn->connect_error) {
     <tr>
         <td>
 
-            <!-- Form yo kwinjizamo izina -->
+            
             <form method="GET">
                 <input type="text" name="name" placeholder="Write your name!" required>
                 <input type="submit" value="Check your information">
@@ -61,7 +61,7 @@ if ($conn->connect_error) {
             }
             ?>
 
-            <!-- 3. Dynamic Date & Time & Day -->
+           
             <div class="clock" id="datetime"></div>
 
             <script>
